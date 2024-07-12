@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Pet Food Data</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4">Submit Pet Food Data</h1>
+
+        <form id="pet-food-form" class="bg-white p-4 rounded-lg shadow-md mb-6">
+            <h2 class="text-xl font-bold mb-4">Add New Pet Food</h2>
+            <div class="mb-4">
+                <label for="jenis" class="block text-sm font-medium text-gray-700">Jenis Hewan</label>
+                <input type="text" id="jenis" name="jenis" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="ras" class="block text-sm font-medium text-gray-700">Ras Hewan</label>
+                <input type="text" id="ras" name="ras" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="umur" class="block text-sm font-medium text-gray-700">Umur Hewan</label>
+                <input type="number" id="umur" name="umur" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="jenismakanan" class="block text-sm font-medium text-gray-700">Jenis Makanan</label>
+                <input type="text" id="jenismakanan" name="jenismakanan" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="bahan" class="block text-sm font-medium text-gray-700">Bahan</label>
+                <input type="text" id="bahan" name="bahan" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="berat" class="block text-sm font-medium text-gray-700">Berat (kg)</label>
+                <input type="number" id="berat" name="berat" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="rasa" class="block text-sm font-medium text-gray-700">Rasa</label>
+                <input type="text" id="rasa" name="rasa" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="merk" class="block text-sm font-medium text-gray-700">Merk</label>
+                <input type="text" id="merk" name="merk" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="harga" class="block text-sm font-medium text-gray-700">Harga</label>
+                <input type="number" id="harga" name="harga" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white p-2 rounded-md">Submit</button>
+        </form>
+    </div>
+    <script src="js/controller/form.js" type="module"></script>
+</body>
+</html>
