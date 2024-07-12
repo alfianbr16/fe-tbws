@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 const card = document.createElement('div');
                 card.classList.add('bg-white', 'p-4', 'rounded-lg', 'shadow-md');
 
-                const animalType = document.createElement('h2');
-                animalType.classList.add('text-2xl', 'font-bold', 'mb-2');
-                animalType.textContent = `${item.hewan.jenis} ${item.hewan.ras}`;
+                const foodProduct = document.createElement('h2');
+                foodProduct.classList.add('text-2xl', 'font-bold', 'mb-2');
+                foodProduct.textContent = `${item.merk}`;
 
                 const foodPrice = document.createElement('p');
                 foodPrice.classList.add('text-xl', 'mb-1', 'font-bold');
@@ -20,7 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const deskripsi = document.createElement('p');
                 deskripsi.classList.add('mb-1');
-                deskripsi.textContent = `Makanan ${item.jenismakanan} terbuat dari ${item.bahan} dengan rasa ${item.rasa} untuk hewan dengan umur ${item.hewan.umur} tahun. Produksi ${item.merk}`;
+                deskripsi.textContent = `Makanan ${item.jenismakanan} terbuat dari ${item.bahan} dengan rasa ${item.rasa} untuk hewan dengan umur ${item.hewan.umur} tahun.`;
+
+                const animalType = document.createElement('p');
+                animalType.classList.add('mb-1');
+                animalType.textContent = `Untuk ${item.hewan.jenis} ${item.hewan.ras}`;
 
                 const foodDate = document.createElement('p');
                 foodDate.classList.add('mb-1');
@@ -56,9 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 buttonsContainer.appendChild(editButton);
                 buttonsContainer.appendChild(deleteButton);
 
-                card.appendChild(animalType);
+                card.appendChild(foodProduct);
                 card.appendChild(foodPrice);
                 card.appendChild(deskripsi);
+                card.appendChild(animalType);
                 card.appendChild(foodDate);
                 card.appendChild(buttonsContainer);
 
